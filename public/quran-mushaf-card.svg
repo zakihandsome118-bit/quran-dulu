@@ -1,0 +1,62 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 240" width="100%" height="100%">
+  <defs>
+    <linearGradient id="cardLeather" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#382012" />
+      <stop offset="50%" stop-color="#24130A" />
+      <stop offset="100%" stop-color="#140904" />
+    </linearGradient>
+
+    <linearGradient id="cardGold" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FCEAB8" />
+      <stop offset="50%" stop-color="#D4AF37" />
+      <stop offset="100%" stop-color="#996E0D" />
+    </linearGradient>
+
+    <linearGradient id="pageParchment" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#EFE6CF" />
+      <stop offset="48%" stop-color="#FAF5E7" />
+      <stop offset="50%" stop-color="#D8CBB0" />
+      <stop offset="52%" stop-color="#FAF5E7" />
+      <stop offset="100%" stop-color="#EFE6CF" />
+    </linearGradient>
+
+    <pattern id="cardMiniLattice" width="24" height="24" patternUnits="userSpaceOnUse">
+      <path d="M12 0 L24 12 L12 24 L0 12 Z" fill="none" stroke="#D4AF37" stroke-width="0.5" stroke-opacity="0.12" />
+    </pattern>
+  </defs>
+
+  <rect width="400" height="240" rx="20" fill="url(#cardLeather)" />
+  <rect width="400" height="240" rx="20" fill="url(#cardMiniLattice)" />
+
+  <!-- Outer gold boundary -->
+  <rect x="10" y="10" width="380" height="220" rx="14" fill="none" stroke="url(#cardGold)" stroke-width="1.5" stroke-opacity="0.8" />
+  <rect x="15" y="15" width="370" height="210" rx="10" fill="none" stroke="#D4AF37" stroke-width="0.75" stroke-opacity="0.3" stroke-dasharray="4,3" />
+
+  <!-- Open Mushaf Drawing in Center Right -->
+  <g transform="translate(300, 120)">
+    <!-- Wooden Rehal / Bookstand -->
+    <path d="M-60 45 L0 15 L60 45" stroke="#7A4E27" stroke-width="4" stroke-linecap="round" />
+    <path d="M-50 50 L0 25 L50 50" stroke="#543315" stroke-width="3" stroke-linecap="round" />
+    
+    <!-- Open Pages -->
+    <!-- Left Page -->
+    <path d="M0 -30 C-30 -35 -60 -25 -75 -15 L-75 25 C-60 15 -30 25 0 20 Z" fill="url(#pageParchment)" stroke="#C59E3F" stroke-width="1.2" />
+    <!-- Page lines left -->
+    <line x1="-15" y1="-18" x2="-65" y2="-8" stroke="#AA8232" stroke-width="1" stroke-opacity="0.6" />
+    <line x1="-15" y1="-8" x2="-65" y2="2" stroke="#AA8232" stroke-width="1" stroke-opacity="0.6" />
+    <line x1="-15" y1="2" x2="-65" y2="12" stroke="#AA8232" stroke-width="1" stroke-opacity="0.6" />
+
+    <!-- Right Page -->
+    <path d="M0 -30 C30 -35 60 -25 75 -15 L75 25 C60 15 30 25 0 20 Z" fill="url(#pageParchment)" stroke="#C59E3F" stroke-width="1.2" />
+    <!-- Page lines right -->
+    <line x1="15" y1="-18" x2="65" y2="-8" stroke="#AA8232" stroke-width="1" stroke-opacity="0.6" />
+    <line x1="15" y1="-8" x2="65" y2="2" stroke="#AA8232" stroke-width="1" stroke-opacity="0.6" />
+    <line x1="15" y1="2" x2="65" y2="12" stroke="#AA8232" stroke-width="1" stroke-opacity="0.6" />
+
+    <!-- Golden Bookmark Ribbon Hanging -->
+    <path d="M0 -28 Q-5 10 -10 38 L-4 35 L2 38 Q-2 10 0 -28 Z" fill="url(#cardGold)" />
+    
+    <!-- Spine Shadow -->
+    <line x1="0" y1="-30" x2="0" y2="20" stroke="#7A5E24" stroke-width="2" />
+  </g>
+</svg>

@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css2?family=Amiri:ital,wght@0,400;0,700;1,400;1,700&family=Plus+Jakarta+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,400&family=Scheherazade+New:wght@400;700&family=Cinzel:wght@600;700&display=swap');
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --font-arabic: 'Amiri', 'Scheherazade New', 'Traditional Arabic', serif;
+    --font-sans: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+    
+    /* Authentic Mushaf Paper & Leather Gilded Palette */
+    --bg-page: #F6F1E3; /* Mushaf Warm Parchment */
+    --bg-surface: #FCF9F0; /* Fine Quran Paper */
+    --bg-surface-subtle: #EFE8D3; /* Subtle Gilded Tint */
+    
+    --color-quran-leather: #2C1810; /* Rich Quran Leather Cover */
+    --color-quran-leather-dark: #1C0E06; /* Deep Binding */
+    
+    --color-gold: #C59E3F; /* Antique Quran Gold Leaf */
+    --color-gold-dark: #8F6E1C; /* Deep Burnished Gold */
+    --color-gold-light: #F7E9C4; /* Soft Gold Tint */
+    
+    --color-border: #E5DBC5; /* Parchment Border */
+    --color-border-gold: #D6C28F; /* Gilded Margin Rule */
+    
+    --color-text-arabic: #181512; /* Deep Carbon Ink */
+    --color-text-main: #2C1810; /* Warm Dark Walnut Text */
+    --color-text-muted: #706553; /* Antique Muted Ochre */
+  }
+
+  body {
+    background-color: var(--bg-page);
+    color: var(--color-text-main);
+    font-family: var(--font-sans);
+    -webkit-font-smoothing: antialiased;
+    background-image: 
+      radial-gradient(rgba(197, 158, 63, 0.08) 1px, transparent 1px),
+      radial-gradient(rgba(44, 24, 16, 0.03) 1px, transparent 1px);
+    background-size: 28px 28px;
+    background-position: 0 0, 14px 14px;
+  }
+}
+
+.font-arabic {
+  font-family: 'Amiri', 'Scheherazade New', 'Lateef', 'Traditional Arabic', serif;
+  line-height: 2.3;
+}
+
+.font-arabic-title {
+  font-family: 'Amiri', 'Scheherazade New', serif;
+}
+
+/* Custom scrollbar styled with Quran gold & leather */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background: rgba(197, 158, 63, 0.45);
+  border-radius: 9999px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(44, 24, 16, 0.7);
+}
+
+/* Authentic Quranic Rosette / Medallion Marker */
+.quran-verse-badge {
+  background: radial-gradient(circle, #FCF9F0 45%, #F5ECCB 85%, #C59E3F 100%);
+  border: 1.5px solid #C59E3F;
+  box-shadow: 0 1px 3px rgba(143, 110, 28, 0.15);
+}
+
+/* Gilded Mushaf Frame Header */
+.mushaf-frame-border {
+  border: 2px solid #C59E3F;
+  outline: 1px solid #E5DBC5;
+  outline-offset: 3px;
+}
+
+/* Ornate decorative divider */
+.mushaf-divider {
+  background: linear-gradient(90deg, transparent 0%, #C59E3F 50%, transparent 100%);
+  height: 1px;
+}
