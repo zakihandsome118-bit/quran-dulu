@@ -4,7 +4,7 @@ import { AppShell } from '@/components/AppShell';
 
 export const metadata: Metadata = {
   // TODO: ganti dengan domain final setelah deploy ke Vercel (dipakai untuk resolve URL gambar OG)
-  metadataBase: new URL('https://quran-dulu.vercel.app'),
+  metadataBase: new URL('https://quran-dulu-psi.vercel.app'),
   title: "Qur'an Digital",
   description: 'Developed by Yahya',
   icons: {
